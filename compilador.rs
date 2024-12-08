@@ -4,7 +4,7 @@ use std::io::{self, Write};
 use std::process::Command;
 
 fn main() -> io::Result<()> {
-    // Verifica argumentos de entrada
+    // Verifica args de entrada
     let args: Vec<String> = env::args().collect();
     if args.len() != 2 {
         eprintln!("Uso: {} <arquivo.ci>", args[0]);
@@ -20,7 +20,7 @@ fn main() -> io::Result<()> {
         std::process::exit(1);
     }
 
-    // Gera o código assembly
+    // Gera o cod assembly
     let assembly_code = format!(
         r#"
 .section .text
