@@ -12,9 +12,3 @@ COPY . .
 
 # Compila o programa Rust
 RUN rustc compilador.rs -o compilador
-
-# Configura permissões de execução para o arquivo gerado
-RUN chmod +x compilador
-
-# Comando padrão para executar o container
-CMD ["./compilador", "constante.ci"]
