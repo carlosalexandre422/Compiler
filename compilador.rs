@@ -1,3 +1,6 @@
+// Carlos Alexandre Silva dos Santos - 20210025904
+// João Vitor Teixeira Barreto - 20210094349
+
 use std::env;
 use std::fs::{self, File};
 use std::io::{self, Write};
